@@ -1,5 +1,5 @@
 ###############################################################
-########### Asignación de labels con el paquete Hmisc #########
+# Asignación de labels con el paquete Hmisc (Rcmdr dependency)#
 ###############################################################
 
 ###### Cargar EPA primero
