@@ -45,8 +45,8 @@ hist.sample=function(breaks,rf,n, seed=NULL){
 #### EXAMPLE 1: Normal distribution ######
 
 set.seed(12345)
-y=rnorm(1000)
-y=rgamma(1000,shape = 1,scale = 1)
+y=rnorm(10000)
+y=rgamma(10000,shape = 1,scale = 1)
 info=hist(y, breaks="Sturges", col="darkgray")
 probability=info$counts/sum(info$counts)
 
@@ -56,7 +56,7 @@ par(mfrow=c(1,2))
 
 hist(y, breaks="Sturges", col="darkgray");hist(simulated,breaks=info$breaks)
 
-#### EXAMPLE 1: Gamma distribution ######
+#### EXAMPLE 2: Gamma distribution ######
 set.seed(12345)
 y=rgamma(1000,shape = 1,scale = 1)
 info=hist(y, breaks="Sturges", col="darkgray")
